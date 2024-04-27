@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      /* const product = { name: "socks", price:1090 };
+      //   console.log(product);
+      //   console.log(product.name);
+      //   console.log(product.price);
+
+      product.name = "cotton socks";
+      product.newProperty = true;
+      delete product.newProperty;
+      console.log(product);0 */
+
+      const product2 = {
+        name: "shirt",
+        "delivery-time": "1day",
+        rating: {
+          stars: 4.5,
+          count: 87,
+        },
+        fun: function () {
+          console.log("inside the obj");
+        },
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2["name"]);
+      console.log(product2["delivery-time"]);
+      product2.fun();
+      console.log(typeof console);
+
+      console.log(JSON.stringify(product2));
+      const jsonString = JSON.stringify(product2);
+      const parseJson = JSON.parse(jsonString);
+      console.log(parseJson);
+    </script>
+  </body>
+</html>

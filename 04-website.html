@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS Review</title>
+    <style>
+      /*
+        This is a comment.
+      */
+      .red-button {
+        background-color: red;
+        color: white;
+        border: none;
+      }
+
+      .yellow-button {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      This is a comment.
+    -->
+    <button
+      title="Good job!"
+      class="red-button"
+      onclick="
+      alert('Good job!');
+    "
+    >
+      hello
+    </button>
+
+    <p>
+      paragraph of
+      <button class="yellow-button" onclick="greet()">hello</button>
+      text
+    </p>
+
+    <script>
+      // This is a comment.
+      // This code creates a popup.
+      // alert('hello');
+
+      /*
+        multi
+        line
+        comment
+      */
+
+      /* console.log(2 + 2);
+      console.log("some" + "text"); */
+
+      function greet(name) {
+        if (name === undefined) {
+          console.log("hi there!");
+        } else {
+          console.log(`hello! ${name}`);
+        }
+      }
+      let celsius = 35;
+      function celsiusToFarenheit(celsius) {
+        const farenheit = (celsius * 9) / 5 + 32;
+        return farenheit;
+      }
+      console.log(celsiusToFarenheit(celsius));
+
+      let farenheit = 35;
+      function farenheitToCelsius(farenheit) {
+        const celsius = ((farenheit - 32) * 5) / 9;
+        return celsius;
+      }
+      console.log(farenheitToCelsius(farenheit));
+
+      function convertTemparatures(degree, unit) {
+        if (degree === "F") {
+          const farenheit = (unit * 9) / 5 + 32;
+          return `${farenheit}${degree}`;
+        } else degree === "C";
+        {
+          const celsius = ((unit - 32) * 5) / 9;
+          return `${celsius}${degree}`;
+        }
+      }
+      console.log(convertTemparatures("F", 35));
+      console.log(convertTemparatures("C", 35));
+    </script>
+  </body>
+</html>
